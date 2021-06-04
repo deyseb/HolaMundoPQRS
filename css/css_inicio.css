@@ -1,0 +1,124 @@
+/*** Default Styles ***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /*** Header Styles ***/
+  header {
+    width: 100vw;
+    height: 80px;
+    background: #5661F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  /*** Navigation Styles ***/
+  nav {
+    width: 100vw;
+    height: 80px;
+    background: #46B2F0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+  nav.navShadow {
+    box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+    height: 60px;
+  }
+  nav.navShadow #logo {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+  }
+  
+  #brand,
+  #menu,
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #brand {
+    padding-left: 40px;
+  }
+  
+  #logo {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /*** Menu Styles ***/
+  #menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  li {
+    margin-left: 20px;
+  }
+  li a {
+    width: 80px;
+    height: 50px;
+    background: #fff;
+    display: block;
+    border-radius: 100px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .bar:nth-child(2) {
+    width: 20px;
+    margin: 5px 0;
+  }
+  .bar:last-child {
+    width: 15px;
+  }
+  
+  /*** Section Styles ***/
+  section {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section:nth-child(odd) {
+    background: #7bcfff;
+  }
+  section:nth-child(even) {
+    background: #b65bf9;
+  }
+  
+  #heading {
+    width: 120px;
+    height: 10px;
+    background: #fff;
+    border-radius: 90px;
+    margin-top: 40px;
+  }
+  
